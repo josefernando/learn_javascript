@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 14</title>
+        <!-- <link rel="stylesheet" href="aula14.css"> -->
+    </head>
+    <body>
+        <h1>Calculadora de IMC</h1>
+        <form action="" method="POST" id="fomulario">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text"
+                name="nome"
+                required
+                autocomplete="off"
+                class="input"
+                autofocus></input>
+            </div>
+            <div class="form-group"> 
+                <label for="idade">Idade</label>
+                <input id="idade" type="number" name="idade" required class="input"
+                min="0" max="130">
+            </div>
+            <div class="form-group">
+                <label for="peso">Peso</label>
+                <input type="number"
+                id="peso"
+                class="input"
+                required
+                min="0.0"
+                max="500"
+                step="0.01"
+                name="peso"
+                >
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura</label>
+                <input type="number"
+                id="altura"
+                name="altura"
+                min="0.5"
+                max="3.0"
+                step="0.01"
+                class="input"
+                required
+                >
+            </div>
+<!-- BOTÕES -->
+            <div class="form-group">
+                <button type="submit" class="botao"
+                id="btnEnviar">Enviar</button> 
+                <button type="reset" class="botao"
+                id="btnEnviar">Limpar</button>                
+            </div>
+            <div class="form-group">
+                <label for="resultImc">IMC</label>
+                <input name="resultadoIMC"
+                id="imc"
+                disabled
+                class="input"
+                value="0.0">
+            </div>
+<!-- RESULTADO -->
+        <div id="resultado">
+        <h2 id="rImcLabel">IMC</h2>
+        <p id="rNome"></p>
+        <p id="rIdade"></p>
+        <p id="rPeso"></p>
+        <p id="rAltura"></p>
+        </div>
+    </form>
+    <script src="js/aula14.js"></script>   
+</body>
+</html>
