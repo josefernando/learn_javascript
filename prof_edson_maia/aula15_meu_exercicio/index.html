@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
+        <title>aula15</title>
+        <!-- <link rel="stylesheet" href="aula15.css"> -->
+
+    </head>
+    <body>
+    <main>
+        <h1>CALCULAR MÉDIA</h1>
+        <section id="formInput">
+            <form id="formulario" action="" method="POST">
+                <div class="form-group">
+                    <label for="nota1">Nota 1</label>
+                    <input id="nota1" name="nota1" type="number" required onblur="validarNumero(this)">
+                </div>
+                <div class="form-group">
+                    <label for="nota2">Nota 2</label>
+                    <input id="nota2" name="nota2" type="number" required>
+                </div>
+                <div class="form-group">
+                    <button id="btnCalcular" type="submit">Calcular</button>
+                    <button id="btnLimpar" type="reset">Limpar</button>
+                </div>
+                <div>
+                    <label for="media">Média</label>
+                    <input id="media" name="media" type="number" readonly>
+                </div>
+            </form>
+            <div>
+                <p id="situacao-final-label">Situação Final</p>
+                <p id="situacao-final-msg"></p>
+            </div>
+            <div>
+                <p id="aviso">&lt;flash message&gt;</flash></p>
+            </div>
+
+        </section>
+        <section>
+            <div></div>
+        </section>
+    </main>
+    </body>
+</html>
